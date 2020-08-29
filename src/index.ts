@@ -3,8 +3,10 @@ export { invert } from './lib/invert'
 
 // conversion
 export { hertzToMel } from './lib/hertzToMel'
-export { hertzToOctaves } from './lib/hertzToOctaves'
+export { hertzToOctaves } from './lib/hertzToOctaves' // TODO: octaves to hertz
 export { melToHertz } from './lib/melToHertz'
+export { midiToHertz } from './lib/midiToHertz'
+export { hertzToMidi } from './lib/hertzToMidi'
 
 // waves
 export { sawWave } from './lib/sawWave'
