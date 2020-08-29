@@ -1,26 +1,26 @@
 // single sample processing
-export { invert } from './lib/invert'
+export { invert } from './lib/processing/invert'
 
 // conversion
-export { hertzToMel } from './lib/hertzToMel'
-export { hertzToOctaves } from './lib/hertzToOctaves' // TODO: octaves to hertz
-export { melToHertz } from './lib/melToHertz'
-export { midiToHertz } from './lib/midiToHertz'
-export { hertzToMidi } from './lib/hertzToMidi'
+export { hertzToMel } from './lib/conversion/hertzToMel'
+export { hertzToOctaves } from './lib/conversion/hertzToOctaves' // TODO: octaves to hertz
+export { melToHertz } from './lib/conversion/melToHertz'
+export { midiToHertz } from './lib/conversion/midiToHertz'
+export { hertzToMidi } from './lib/conversion/hertzToMidi'
 
 // waves
-export { sawWave } from './lib/sawWave'
-export { sineWave } from './lib/sineWave'
-export { squareWave } from './lib/squareWave'
-export { triangleWave } from './lib/triangleWave'
+export { sawWave } from './lib/synthesis/sawWave'
+export { sineWave } from './lib/synthesis/sineWave'
+export { squareWave } from './lib/synthesis/squareWave'
+export { triangleWave } from './lib/synthesis/triangleWave'
 
 // window
-export { bartlettHannWindow } from './lib/bartlettHannWindow'
-export { bartlettWindow } from './lib/bartlettWindow'
-export { blackmanWindow } from './lib/blackmanWindow'
-export { cosineWindow } from './lib/cosineWindow'
-export { gaussWindow } from './lib/gaussWindow'
-export { hammingWindow } from './lib/hammingWindow'
-export { hannWindow } from './lib/hannWindow'
-export { lanczosWindow } from './lib/lanczosWindow'
-export { triangularWindow } from './lib/triangularWindow'
+export { bartlettHannWindow } from './lib/window/bartlettHannWindow'
+export { bartlettWindow } from './lib/window/bartlettWindow'
+export { blackmanWindow } from './lib/window/blackmanWindow'
+export { cosineWindow } from './lib/window/cosineWindow'
+export { gaussWindow } from './lib/window/gaussWindow'
+export { hammingWindow } from './lib/window/hammingWindow'
+export { hannWindow } from './lib/window/hannWindow'
+export { lanczosWindow } from './lib/window/lanczosWindow'
+export { triangularWindow } from './lib/window/triangularWindow'
