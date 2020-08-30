@@ -1,4 +1,4 @@
-import { TWO_PI } from './constants'
+import { TWO_PI } from '../constants'
 
 export const blackmanWindow = (
   length: number,
