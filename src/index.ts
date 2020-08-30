@@ -34,6 +34,7 @@ export { triangleWave } from './lib/synthesis/triangleWave'
 export { brownNoise } from './lib/synthesis/brownNoise'
 export { pinkNoise } from './lib/synthesis/pinkNoise'
 export { whiteNoise } from './lib/synthesis/whiteNoise'
+export { clausen } from './lib/synthesis/clausen'
 
 // window
 export { bartlettHannWindow } from './lib/window/bartlettHannWindow'

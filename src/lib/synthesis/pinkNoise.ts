@@ -26,7 +26,7 @@ export const pinkNoise = (
     state.b3 = 0.8665 * state.b3 + white * 0.3104856
     state.b4 = 0.55 * state.b4 + white * 0.5329522
     state.b5 = -0.7616 * state.b5 - white * 0.016898
-    buffer[i] =
+    const val =
       state.b0 +
       state.b1 +
       state.b2 +
@@ -35,7 +35,7 @@ export const pinkNoise = (
       state.b5 +
       state.b6 +
       white * 0.5362
-    buffer[i] *= 0.11
+    buffer[i] = val * 0.11
     state.b6 = white * 0.115926
   }
 
