@@ -30,3 +30,7 @@ console.log(bpmToSamples(44100, 120))
 - https://github.com/ciconia/awesome-music#audio-libraries
 - https://github.com/audiojs
 - https://aldel.com/reverbgen/
+
+## License
+
+MIT
