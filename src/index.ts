@@ -1,4 +1,4 @@
-// single sample processing
+// sample processing
 export { invert } from './lib/processing/invert'
 export { hardClip } from './lib/processing/hardClip'
 export { infiniteClip } from './lib/processing/infiniteClip'
@@ -6,13 +6,10 @@ export { cubicSoftClip } from './lib/processing/cubicSoftClip'
 export { atanSoftClip } from './lib/processing/atanSoftClip'
 export { bitReduction } from './lib/processing/bitReduction'
 
-// weighting
-export { aWeight } from './lib/weighting/aWeight'
-export { bWeight } from './lib/weighting/bWeight'
-export { cWeight } from './lib/weighting/cWeight'
-export { dWeight } from './lib/weighting/dWeight'
-export { mWeight } from './lib/weighting/mWeight'
-export { zWeight } from './lib/weighting/zWeight'
+// buffer
+export { getPeak } from './lib/buffer/getPeak'
+export { getRms } from './lib/buffer/getRms'
+export { normalize } from './lib/buffer/normalize'
 
 // conversion
 export { hertzToMel } from './lib/conversion/hertzToMel'
@@ -35,6 +32,14 @@ export { brownNoise } from './lib/synthesis/brownNoise'
 export { pinkNoise } from './lib/synthesis/pinkNoise'
 export { whiteNoise } from './lib/synthesis/whiteNoise'
 export { clausen } from './lib/synthesis/clausen'
+
+// weighting
+export { aWeight } from './lib/weighting/aWeight'
+export { bWeight } from './lib/weighting/bWeight'
+export { cWeight } from './lib/weighting/cWeight'
+export { dWeight } from './lib/weighting/dWeight'
+export { mWeight } from './lib/weighting/mWeight'
+export { zWeight } from './lib/weighting/zWeight'
 
 // window
 export { bartlettHannWindow } from './lib/window/bartlettHannWindow'
