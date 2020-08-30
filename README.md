@@ -22,21 +22,22 @@ console.log(bpmToSamples(44100, 120))
 
 ## Links
 
+- https://github.com/skulptur/unit-fns
+- https://github.com/audiojs/music-fns
 - https://github.com/meyda/meyda
 - https://en.wikipedia.org/wiki/Mel_scale
-- https://github.com/skulptur/unit-fns
 - https://github.com/oramics/dsp-kit
 - https://github.com/indutny/fft.js
 - https://github.com/ciconia/awesome-music#audio-libraries
 - https://github.com/audiojs
 - https://aldel.com/reverbgen/
-- https://github.com/audiojs/music-fns
 - https://github.com/audiocogs/aurora.js
 - https://en.wikipedia.org/wiki/Colors_of_noise
 - https://github.com/scijs/window-function
 - https://github.com/audiojs/freqr
 - https://github.com/markert/fili.js
 - http://dmeffert.github.io/digital-filter-explorer/docs/filter.html
+- https://www.advsolned.com/difference-between-iir-and-fir-filters-a-practical-design-guide/
 
 ## License
 
