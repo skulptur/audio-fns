@@ -36,6 +36,7 @@ console.log(bpmToSamples(44100, 120))
 - https://github.com/scijs/window-function
 - https://github.com/audiojs/freqr
 - https://github.com/markert/fili.js
+- http://dmeffert.github.io/digital-filter-explorer/docs/filter.html
 
 ## License
 
