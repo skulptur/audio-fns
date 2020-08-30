@@ -29,3 +29,4 @@ console.log(bpmToSamples(44100, 120))
 - https://github.com/indutny/fft.js
 - https://github.com/ciconia/awesome-music#audio-libraries
 - https://github.com/audiojs
+- https://aldel.com/reverbgen/
