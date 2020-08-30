@@ -12,6 +12,8 @@ export { hertzToOctaves } from './lib/conversion/hertzToOctaves' // TODO: octave
 export { melToHertz } from './lib/conversion/melToHertz'
 export { midiToHertz } from './lib/conversion/midiToHertz'
 export { hertzToMidi } from './lib/conversion/hertzToMidi'
+export { samplesToSeconds } from './lib/conversion/samplesToSeconds'
+export { secondsToSamples } from './lib/conversion/secondsToSamples'
 
 // waves
 export { sawWave } from './lib/synthesis/sawWave'
