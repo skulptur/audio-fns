@@ -32,6 +32,17 @@
   "name": "audio-fns",
   "author": "Gustavo Spredemann",
   "repository": "https://github.com/skulptur/audio-fns",
+  "keywords": [
+    "functional",
+    "audio",
+    "dsp",
+    "fft",
+    "wave",
+    "music",
+    "procedural",
+    "synthesis",
+    "typescript"
+  ],
   "module": "dist/audio-fns.esm.js",
   "devDependencies": {
     "husky": "^4.2.5",
