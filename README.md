@@ -33,6 +33,7 @@ console.log(bpmToSamples(44100, 120))
 - https://github.com/audiojs/music-fns
 - https://github.com/audiocogs/aurora.js
 - https://en.wikipedia.org/wiki/Colors_of_noise
+- https://github.com/scijs/window-function
 
 ## License
 
