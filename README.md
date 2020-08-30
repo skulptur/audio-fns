@@ -34,6 +34,7 @@ console.log(bpmToSamples(44100, 120))
 - https://github.com/audiocogs/aurora.js
 - https://en.wikipedia.org/wiki/Colors_of_noise
 - https://github.com/scijs/window-function
+- https://github.com/audiojs/freqr
 
 ## License
 
