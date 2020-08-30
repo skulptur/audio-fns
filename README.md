@@ -32,6 +32,7 @@ console.log(bpmToSamples(44100, 120))
 - https://aldel.com/reverbgen/
 - https://github.com/audiojs/music-fns
 - https://github.com/audiocogs/aurora.js
+- https://en.wikipedia.org/wiki/Colors_of_noise
 
 ## License
 
