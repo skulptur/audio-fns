@@ -19,3 +19,13 @@ import { bpmToSamples } from 'audio-fns'
 
 console.log(bpmToSamples(44100, 120))
 ```
+
+## Links
+
+- https://github.com/meyda/meyda
+- https://en.wikipedia.org/wiki/Mel_scale
+- https://github.com/skulptur/unit-fns
+- https://github.com/oramics/dsp-kit
+- https://github.com/indutny/fft.js
+- https://github.com/ciconia/awesome-music#audio-libraries
+- https://github.com/audiojs
