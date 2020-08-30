@@ -35,6 +35,7 @@ console.log(bpmToSamples(44100, 120))
 - https://en.wikipedia.org/wiki/Colors_of_noise
 - https://github.com/scijs/window-function
 - https://github.com/audiojs/freqr
+- https://github.com/markert/fili.js
 
 ## License
 
