@@ -16,7 +16,7 @@ export const pinkNoise = (
   state = initialPinkNoiseState
 ) => {
   const _state = state === initialPinkNoiseState ? state : { ...state }
-  const buffer = new Float32Array(lengthInSamples)
+  const buffer = new Float64Array(lengthInSamples)
 
   for (let i = 0; i < lengthInSamples; i++) {
     const white = whiteNoiseGenerator()
