@@ -6,6 +6,14 @@ export { cubicSoftClip } from './lib/processing/cubicSoftClip'
 export { atanSoftClip } from './lib/processing/atanSoftClip'
 export { bitReduction } from './lib/processing/bitReduction'
 
+// weighting
+export { aWeight } from './lib/weighting/aWeight'
+export { bWeight } from './lib/weighting/bWeight'
+export { cWeight } from './lib/weighting/cWeight'
+export { dWeight } from './lib/weighting/dWeight'
+export { mWeight } from './lib/weighting/mWeight'
+export { zWeight } from './lib/weighting/zWeight'
+
 // conversion
 export { hertzToMel } from './lib/conversion/hertzToMel'
 export { hertzToOctaves } from './lib/conversion/hertzToOctaves' // TODO: octaves to hertz
