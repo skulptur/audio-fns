@@ -15,6 +15,8 @@ export { hertzToMidi } from './lib/conversion/hertzToMidi'
 export { samplesToSeconds } from './lib/conversion/samplesToSeconds'
 export { secondsToSamples } from './lib/conversion/secondsToSamples'
 export { bpmToSamples } from './lib/conversion/bpmToSamples'
+export { amplitudeToDecibels } from './lib/conversion/amplitudeToDecibels'
+export { decibelsToAmplitude } from './lib/conversion/decibelsToAmplitude'
 
 // waves
 export { sawWave } from './lib/synthesis/sawWave'
