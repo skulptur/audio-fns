@@ -1,5 +1,10 @@
 // single sample processing
 export { invert } from './lib/processing/invert'
+export { hardClip } from './lib/processing/hardClip'
+export { infiniteClip } from './lib/processing/infiniteClip'
+export { cubicSoftClip } from './lib/processing/cubicSoftClip'
+export { atanSoftClip } from './lib/processing/atanSoftClip'
+export { bitReduction } from './lib/processing/bitReduction'
 
 // conversion
 export { hertzToMel } from './lib/conversion/hertzToMel'
