@@ -17,5 +17,5 @@ Use
 ```typescript
 import { bpmToSamples } from 'audio-fns'
 
-console.log(bpmToSamples(120))
+console.log(bpmToSamples(44100, 120))
 ```
