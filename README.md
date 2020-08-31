@@ -38,6 +38,7 @@ console.log(bpmToSamples(44100, 120))
 - https://github.com/markert/fili.js
 - http://dmeffert.github.io/digital-filter-explorer/docs/filter.html
 - https://www.advsolned.com/difference-between-iir-and-fir-filters-a-practical-design-guide/
+- https://www.musicdsp.org/en/latest/
 
 ## License
 
