@@ -11,6 +11,14 @@ export { getPeak } from './lib/buffer/getPeak'
 export { getRms } from './lib/buffer/getRms'
 export { normalize } from './lib/buffer/normalize'
 
+// sampling
+export { cache1d } from './lib/sampling/cache1d'
+export { cache2d } from './lib/sampling/cache2d'
+export { cache3d } from './lib/sampling/cache3d'
+
+// transform
+export { fft } from './lib/transform/fft'
+
 // conversion
 export { hertzToMel } from './lib/conversion/hertzToMel'
 export { hertzToOctaves } from './lib/conversion/hertzToOctaves' // TODO: octaves to hertz
