@@ -1,14 +1,14 @@
 export const cache2d = (
-  xCount: number,
-  yCount: number,
+  xLength: number,
+  yLength: number,
   fn: (xIndex: number, yIndex: number) => number
 ) => {
   const yList: Array<Float64Array> = []
 
-  for (let yIndex = 0; yIndex < yCount; yIndex++) {
-    const xBuffer = new Float64Array(xCount)
+  for (let yIndex = 0; yIndex < yLength; yIndex++) {
+    const xBuffer = new Float64Array(xLength)
 
-    for (let xIndex = 0; xIndex < xCount; xIndex++) {
+    for (let xIndex = 0; xIndex < xLength; xIndex++) {
       xBuffer[xIndex] = fn(xIndex, yIndex)
     }
 
@@ -16,7 +16,7 @@ export const cache2d = (
   }
 
   return {
-    dimensions: [xCount, yCount],
+    dimensions: [xLength, yLength],
     data: yList,
   } as const
 }
