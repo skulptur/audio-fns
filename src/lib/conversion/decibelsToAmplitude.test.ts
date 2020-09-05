@@ -1,7 +1,7 @@
 import { decibelsToAmplitude } from './decibelsToAmplitude'
 
 describe('decibelsToAmplitude', () => {
-  it('converts 0..1 to decibels', () => {
+  it('converts decibels to 0..1', () => {
     const decibels = [
       -Infinity,
       -19.99979360072768,
