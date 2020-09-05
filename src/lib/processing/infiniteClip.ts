@@ -1,3 +1,3 @@
 export const infiniteClip = (signal: number) => {
-  return signal > 0 ? 1 : 0
+  return signal > 0 ? 1 : -1
 }
