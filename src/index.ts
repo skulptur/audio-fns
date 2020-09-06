@@ -1,23 +1,7 @@
-// sample processing
-export { invert } from './lib/processing/invert'
-export { hardClip } from './lib/processing/hardClip'
-export { infiniteClip } from './lib/processing/infiniteClip'
-export { cubicSoftClip } from './lib/processing/cubicSoftClip'
-export { atanSoftClip } from './lib/processing/atanSoftClip'
-export { bitReduction } from './lib/processing/bitReduction'
-
 // buffer
 export { getPeak } from './lib/buffer/getPeak'
 export { getRms } from './lib/buffer/getRms'
 export { normalize } from './lib/buffer/normalize'
-
-// sampling
-export { cache1d } from './lib/sampling/cache1d'
-export { cache2d } from './lib/sampling/cache2d'
-export { cache3d } from './lib/sampling/cache3d'
-
-// transform
-export { fft } from './lib/transform/fft'
 
 // conversion
 export { hertzToMel } from './lib/conversion/hertzToMel'
@@ -33,7 +17,20 @@ export { decibelsToAmplitude } from './lib/conversion/decibelsToAmplitude'
 // filter
 export { pinkFilter } from './lib/filter/pinkFilter'
 
-// waves
+// processing
+export { invert } from './lib/processing/invert'
+export { hardClip } from './lib/processing/hardClip'
+export { infiniteClip } from './lib/processing/infiniteClip'
+export { cubicSoftClip } from './lib/processing/cubicSoftClip'
+export { atanSoftClip } from './lib/processing/atanSoftClip'
+export { bitReduction } from './lib/processing/bitReduction'
+
+// sampling
+export { cache1d } from './lib/sampling/cache1d'
+export { cache2d } from './lib/sampling/cache2d'
+export { cache3d } from './lib/sampling/cache3d'
+
+// synthesis
 export { sawWave } from './lib/synthesis/sawWave'
 export { sineWave } from './lib/synthesis/sineWave'
 export { squareWave } from './lib/synthesis/squareWave'
@@ -41,6 +38,9 @@ export { triangleWave } from './lib/synthesis/triangleWave'
 export { brownNoise } from './lib/synthesis/brownNoise'
 export { whiteNoise } from './lib/synthesis/whiteNoise'
 export { clausen } from './lib/synthesis/clausen'
+
+// transform
+export { fft } from './lib/transform/fft'
 
 // weighting
 export { aWeight } from './lib/weighting/aWeight'
