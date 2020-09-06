@@ -1,7 +1,7 @@
 import { normalize } from './normalize'
 
 describe('normalize', () => {
-  it('performs soft clip distortion', () => {
+  it('normalizes the signals in a buffer', () => {
     const drySignal = [-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75]
     const result = normalize(drySignal)
 
