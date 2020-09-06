@@ -7,29 +7,29 @@ export const pinkFilter = <B extends NumericalBuffer>(
   state: PinkFilterState = [0, 0, 0, 0, 0, 0, 0]
 ) => {
   const length = buffer.length
-  const _state = { ...state }
+  const _state = [...state]
   const _buffer = buffer.slice(0) as WritableNumericalBuffer
 
   for (let i = 0; i < length; i++) {
     const sample = buffer[i]
-    state[0] = 0.99886 * state[0] + sample * 0.0555179
-    state[1] = 0.99332 * state[1] + sample * 0.0750759
-    state[2] = 0.969 * state[2] + sample * 0.153852
-    state[3] = 0.8665 * state[3] + sample * 0.3104856
-    state[4] = 0.55 * state[4] + sample * 0.5329522
-    state[5] = -0.7616 * state[5] - sample * 0.016898
+    _state[0] = 0.99886 * _state[0] + sample * 0.0555179
+    _state[1] = 0.99332 * _state[1] + sample * 0.0750759
+    _state[2] = 0.969 * _state[2] + sample * 0.153852
+    _state[3] = 0.8665 * _state[3] + sample * 0.3104856
+    _state[4] = 0.55 * _state[4] + sample * 0.5329522
+    _state[5] = -0.7616 * _state[5] - sample * 0.016898
     const val =
-      state[0] +
-      state[1] +
-      state[2] +
-      state[3] +
-      state[4] +
-      state[5] +
-      state[6] +
+      _state[0] +
+      _state[1] +
+      _state[2] +
+      _state[3] +
+      _state[4] +
+      _state[5] +
+      _state[6] +
       sample * 0.5362
 
     _buffer[i] = val * 0.11
-    state[6] = sample * 0.115926
+    _state[6] = sample * 0.115926
   }
 
   return {
