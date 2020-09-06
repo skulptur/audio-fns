@@ -1,4 +1,4 @@
-export const cache3d = (
+export const createTable3d = (
   xLength: number,
   yLength: number,
   zLength: number,

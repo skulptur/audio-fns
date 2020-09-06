@@ -29,9 +29,9 @@ export { infiniteClip } from './lib/processing/infiniteClip'
 export { invert } from './lib/processing/invert'
 
 // sampling
-export { cache1d } from './lib/sampling/cache1d'
-export { cache2d } from './lib/sampling/cache2d'
-export { cache3d } from './lib/sampling/cache3d'
+export { createTable1d } from './lib/sampling/createTable1d'
+export { createTable2d } from './lib/sampling/createTable2d'
+export { createTable3d } from './lib/sampling/createTable3d'
 
 // synthesis
 export { clausen } from './lib/synthesis/clausen'

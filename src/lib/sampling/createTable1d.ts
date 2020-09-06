@@ -1,4 +1,7 @@
-export const cache1d = (xLength: number, fn: (xIndex: number) => number) => {
+export const createTable1d = (
+  xLength: number,
+  fn: (xIndex: number) => number
+) => {
   const xBuffer = new Float64Array(xLength)
 
   for (let xIndex = 0; xIndex < xLength; xIndex++) {

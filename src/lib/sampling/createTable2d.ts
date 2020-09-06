@@ -1,4 +1,4 @@
-export const cache2d = (
+export const createTable2d = (
   xLength: number,
   yLength: number,
   fn: (xIndex: number, yIndex: number) => number
