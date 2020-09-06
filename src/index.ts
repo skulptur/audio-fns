@@ -1,4 +1,6 @@
 // buffer
+export { concat } from './lib/buffer/concat'
+export { fade } from './lib/buffer/fade'
 export { getPeak } from './lib/buffer/getPeak'
 export { getRms } from './lib/buffer/getRms'
 export { normalize } from './lib/buffer/normalize'
@@ -33,6 +35,8 @@ export { cache3d } from './lib/sampling/cache3d'
 
 // synthesis
 export { clausen } from './lib/synthesis/clausen'
+export { impulse } from './lib/synthesis/impulse'
+export { oscillator } from './lib/synthesis/oscillator'
 export { sawWave } from './lib/synthesis/sawWave'
 export { sineWave } from './lib/synthesis/sineWave'
 export { squareWave } from './lib/synthesis/squareWave'
