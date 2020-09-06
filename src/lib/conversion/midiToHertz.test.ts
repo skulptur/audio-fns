@@ -1,7 +1,7 @@
 import { midiToHertz } from './midiToHertz'
 
 describe('midiToHertz', () => {
-  it('converts note frequency in hertz to midi note number', () => {
+  it('converts midi note number to frequency in hertz', () => {
     const midiNotes = [...Array(109)].map((_, i) => i)
 
     const result = midiNotes.map(midiToHertz)
