@@ -21,7 +21,6 @@ export { fft } from './lib/transform/fft'
 
 // conversion
 export { hertzToMel } from './lib/conversion/hertzToMel'
-export { hertzToOctaves } from './lib/conversion/hertzToOctaves' // TODO: octaves to hertz
 export { melToHertz } from './lib/conversion/melToHertz'
 export { midiToHertz } from './lib/conversion/midiToHertz'
 export { hertzToMidi } from './lib/conversion/hertzToMidi'
