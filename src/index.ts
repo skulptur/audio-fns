@@ -4,26 +4,26 @@ export { getRms } from './lib/buffer/getRms'
 export { normalize } from './lib/buffer/normalize'
 
 // conversion
+export { amplitudeToDecibels } from './lib/conversion/amplitudeToDecibels'
+export { bpmToSamples } from './lib/conversion/bpmToSamples'
+export { decibelsToAmplitude } from './lib/conversion/decibelsToAmplitude'
 export { hertzToMel } from './lib/conversion/hertzToMel'
+export { hertzToMidi } from './lib/conversion/hertzToMidi'
 export { melToHertz } from './lib/conversion/melToHertz'
 export { midiToHertz } from './lib/conversion/midiToHertz'
-export { hertzToMidi } from './lib/conversion/hertzToMidi'
 export { samplesToSeconds } from './lib/conversion/samplesToSeconds'
 export { secondsToSamples } from './lib/conversion/secondsToSamples'
-export { bpmToSamples } from './lib/conversion/bpmToSamples'
-export { amplitudeToDecibels } from './lib/conversion/amplitudeToDecibels'
-export { decibelsToAmplitude } from './lib/conversion/decibelsToAmplitude'
 
 // filter
 export { pinkFilter } from './lib/filter/pinkFilter'
 
 // processing
-export { invert } from './lib/processing/invert'
-export { hardClip } from './lib/processing/hardClip'
-export { infiniteClip } from './lib/processing/infiniteClip'
-export { cubicSoftClip } from './lib/processing/cubicSoftClip'
 export { atanSoftClip } from './lib/processing/atanSoftClip'
 export { bitReduction } from './lib/processing/bitReduction'
+export { cubicSoftClip } from './lib/processing/cubicSoftClip'
+export { hardClip } from './lib/processing/hardClip'
+export { infiniteClip } from './lib/processing/infiniteClip'
+export { invert } from './lib/processing/invert'
 
 // sampling
 export { cache1d } from './lib/sampling/cache1d'
@@ -31,13 +31,13 @@ export { cache2d } from './lib/sampling/cache2d'
 export { cache3d } from './lib/sampling/cache3d'
 
 // synthesis
+export { brownNoise } from './lib/synthesis/brownNoise'
+export { clausen } from './lib/synthesis/clausen'
 export { sawWave } from './lib/synthesis/sawWave'
 export { sineWave } from './lib/synthesis/sineWave'
 export { squareWave } from './lib/synthesis/squareWave'
 export { triangleWave } from './lib/synthesis/triangleWave'
-export { brownNoise } from './lib/synthesis/brownNoise'
 export { whiteNoise } from './lib/synthesis/whiteNoise'
-export { clausen } from './lib/synthesis/clausen'
 
 // transform
 export { fft } from './lib/transform/fft'
