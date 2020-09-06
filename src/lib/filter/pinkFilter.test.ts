@@ -1,7 +1,7 @@
-import { pinkNoise } from './pinkNoise'
+import { pinkFilter } from './pinkFilter'
 
-describe('pinkNoise', () => {
-  it('generates pink noise', () => {
+describe('pinkFilter', () => {
+  it('applies pink filter, passing noise generates pink noise.', () => {
     const sampledNoise = [
       0.31726212291070643,
       -0.2497046178249871,
@@ -55,13 +55,7 @@ describe('pinkNoise', () => {
       -0.25198007500668096,
     ]
 
-    // TODO: consider sending index from pinkNoise
-    let index = 0
-    const result = pinkNoise(sampledNoise.length, () => {
-      const sample = sampledNoise[index]
-      index++
-      return sample
-    })
+    const result = pinkFilter(sampledNoise)
 
     expect(result).toEqual({
       state: [

@@ -30,13 +30,15 @@ export { bpmToSamples } from './lib/conversion/bpmToSamples'
 export { amplitudeToDecibels } from './lib/conversion/amplitudeToDecibels'
 export { decibelsToAmplitude } from './lib/conversion/decibelsToAmplitude'
 
+// filter
+export { pinkFilter } from './lib/filter/pinkFilter'
+
 // waves
 export { sawWave } from './lib/synthesis/sawWave'
 export { sineWave } from './lib/synthesis/sineWave'
 export { squareWave } from './lib/synthesis/squareWave'
 export { triangleWave } from './lib/synthesis/triangleWave'
 export { brownNoise } from './lib/synthesis/brownNoise'
-export { pinkNoise } from './lib/synthesis/pinkNoise'
 export { whiteNoise } from './lib/synthesis/whiteNoise'
 export { clausen } from './lib/synthesis/clausen'
 
