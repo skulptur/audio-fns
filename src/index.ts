@@ -16,6 +16,7 @@ export { secondsToSamples } from './lib/conversion/secondsToSamples'
 
 // filter
 export { pinkFilter } from './lib/filter/pinkFilter'
+export { brownFilter } from './lib/filter/brownFilter'
 
 // processing
 export { atanSoftClip } from './lib/processing/atanSoftClip'
@@ -31,7 +32,6 @@ export { cache2d } from './lib/sampling/cache2d'
 export { cache3d } from './lib/sampling/cache3d'
 
 // synthesis
-export { brownNoise } from './lib/synthesis/brownNoise'
 export { clausen } from './lib/synthesis/clausen'
 export { sawWave } from './lib/synthesis/sawWave'
 export { sineWave } from './lib/synthesis/sineWave'

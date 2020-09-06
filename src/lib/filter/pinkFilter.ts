@@ -1,13 +1,14 @@
-const initialpinkFilterState = [0, 0, 0, 0, 0, 0, 0]
+import { NumericalBuffer, WritableNumericalBuffer } from '../../types'
 
-// TODO: make output same as input type using generics (same as normalize)
-export const pinkFilter = (
-  buffer: ArrayLike<number> & { slice: (n: number) => ArrayLike<number> },
-  state = initialpinkFilterState
+type PinkFilterState = [number, number, number, number, number, number, number]
+
+export const pinkFilter = <B extends NumericalBuffer>(
+  buffer: B,
+  state: PinkFilterState = [0, 0, 0, 0, 0, 0, 0]
 ) => {
   const length = buffer.length
-  const _state = state === initialpinkFilterState ? state : { ...state }
-  const _buffer = new Float64Array(length)
+  const _state = { ...state }
+  const _buffer = buffer.slice(0) as WritableNumericalBuffer
 
   for (let i = 0; i < length; i++) {
     const sample = buffer[i]
@@ -26,12 +27,13 @@ export const pinkFilter = (
       state[5] +
       state[6] +
       sample * 0.5362
+
     _buffer[i] = val * 0.11
     state[6] = sample * 0.115926
   }
 
   return {
-    buffer: _buffer,
-    state: _state,
+    buffer: _buffer as B,
+    state: _state as PinkFilterState,
   }
 }
