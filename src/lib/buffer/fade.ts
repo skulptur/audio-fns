@@ -1,8 +1,5 @@
 import { NumericalBuffer, WritableNumericalBuffer } from '../../types'
-
-const lerp = (v0: number, v1: number, t: number) => {
-  return v0 * (1 - t) + v1 * t
-}
+import { lerp } from '../utils/lerp'
 
 export const fade = <B extends NumericalBuffer>(
   buffer: B,
