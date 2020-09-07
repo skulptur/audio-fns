@@ -3082,6 +3082,11 @@ internal-slot@^1.0.2:
     has "^1.0.3"
     side-channel "^1.0.2"
 
+interpolation-fns@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/interpolation-fns/-/interpolation-fns-0.1.2.tgz#1b3fcc4d318216530fba4d2fb968c6288cdd081f"
+  integrity sha512-by5VXgD+wn9A0qs4bZIkwxeMELmdvgVya0JHy22e2Zg2Q/vnYbKP9K4O0Jsa7dyrQTq4v2nfUhagsIby99TL8w==
+
 interpret@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"

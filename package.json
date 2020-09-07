@@ -1,5 +1,5 @@
 {
-  "version": "0.1.7",
+  "version": "0.1.8",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -46,13 +46,14 @@
   "module": "dist/audio-fns.esm.js",
   "devDependencies": {
     "husky": "^4.2.5",
+    "ts-essentials": "^7.0.0",
     "tsdx": "^0.13.3",
     "tslib": "^2.0.1",
-    "typescript": "^3.9.7",
-    "ts-essentials": "^7.0.0"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "a-weighting": "^1.1.0",
-    "fftjs": "^0.0.4"
+    "fftjs": "^0.0.4",
+    "interpolation-fns": "^0.1.2"
   }
 }

@@ -1,12 +1,12 @@
 import { NumericalBuffer, WritableNumericalBuffer } from '../../types'
-import { lerp } from '../utils/lerp'
+import { linear } from 'interpolation-fns'
 
 export const fade = <B extends NumericalBuffer>(
   buffer: B,
   fadeInDuration: number,
   fadeOutDuration: number,
-  fadeInInterpolation = lerp,
-  fadeOutInterpolation = lerp
+  fadeInInterpolation = linear,
+  fadeOutInterpolation = linear
 ): B => {
   const length = buffer.length
   const _buffer = buffer.slice(0) as WritableNumericalBuffer
