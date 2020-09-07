@@ -10,7 +10,10 @@ const mapRange = (
   value: number
 ) => ((value - x1) * (y2 - x2)) / (y1 - x1) + x2
 
-export const normalize = <B extends NumericalBuffer>(buffer: B): B => {
+export const normalize = <B extends NumericalBuffer>(
+  buffer: B,
+  limit: number = 1
+): B => {
   const clone = buffer.slice(0) as WritableNumericalBuffer
   const length = clone.length
   const peak = getPeak(buffer)
@@ -18,7 +21,7 @@ export const normalize = <B extends NumericalBuffer>(buffer: B): B => {
   for (let i = 0; i < length; i++) {
     const sample = buffer[i]
 
-    clone[i] = mapRange(-peak, peak, -1, 1, sample)
+    clone[i] = mapRange(-peak, peak, -limit, limit, sample)
   }
 
   return clone as B
