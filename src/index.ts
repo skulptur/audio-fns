@@ -1,9 +1,19 @@
 // buffer
 export { concat } from './lib/buffer/concat'
+export { concatAll } from './lib/buffer/concatAll'
+export { createBuffer } from './lib/buffer/createBuffer'
+export { crossFade } from './lib/buffer/crossFade'
 export { fade } from './lib/buffer/fade'
 export { getPeak } from './lib/buffer/getPeak'
 export { getRms } from './lib/buffer/getRms'
 export { normalize } from './lib/buffer/normalize'
+export { setAt } from './lib/buffer/setAt'
+export { setAtIntervals } from './lib/buffer/setAtIntervals'
+export { setEvery } from './lib/buffer/setEvery'
+export { sum } from './lib/buffer/sum'
+export { trim } from './lib/buffer/trim'
+export { loop } from './lib/buffer/loop'
+export { mutableWrite } from './lib/buffer/mutableWrite'
 
 // conversion
 export { amplitudeToDecibels } from './lib/conversion/amplitudeToDecibels'
