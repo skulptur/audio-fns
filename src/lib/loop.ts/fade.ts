@@ -1,4 +1,4 @@
-import { NumericalBuffer, WritableNumericalBuffer } from '../../types'
+import { NumericalBuffer, MutableNumericalBuffer } from '../../types'
 import { linear } from 'interpolation-fns'
 
 export const fade = <B extends NumericalBuffer>(
@@ -9,7 +9,7 @@ export const fade = <B extends NumericalBuffer>(
   fadeOutInterpolation = linear
 ): B => {
   const length = buffer.length
-  const _buffer = buffer.slice(0) as WritableNumericalBuffer
+  const _buffer = buffer.slice(0) as MutableNumericalBuffer
   const _fadeInDuration = Math.min(fadeInDuration, length)
   const _fadeOutDuration = Math.min(fadeOutDuration, length)
 

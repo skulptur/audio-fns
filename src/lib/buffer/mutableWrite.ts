@@ -1,10 +1,10 @@
-import { WritableNumericalBuffer } from '../../types'
+import { MutableNumericalBuffer } from '../../types'
 
-// abstracts set
-export const mutableWrite = <B extends WritableNumericalBuffer>(
+// TODO: use .set for typed arrays
+export const mutableWrite = <B extends MutableNumericalBuffer>(
   sourceBuffer: B,
   targetBuffer: B,
-  startIndex: number
+  startIndex: number = 0
 ) => {
   const targetLength = targetBuffer.length
   const start = Math.min(startIndex + sourceBuffer.length, targetLength)

@@ -1,18 +1,20 @@
 import { mutableWrite } from './mutableWrite'
-import { NumericalBuffer, WritableNumericalBuffer } from '../../types'
+import { NumericalBuffer, MutableNumericalBuffer } from '../../types'
+import { clone } from './clone'
 
 export const loop = <B extends NumericalBuffer>(
   sourceBuffer: B,
   times: number
-) => {
+): B => {
   const sourceLength = sourceBuffer.length
-  const clone = sourceBuffer.slice(
+  const output = clone(
+    sourceBuffer,
     sourceLength * times
-  ) as WritableNumericalBuffer
+  ) as MutableNumericalBuffer
 
   for (let i = 0; i < times; i++) {
-    mutableWrite(sourceBuffer, clone, i * sourceLength)
+    mutableWrite(sourceBuffer, output, i * sourceLength)
   }
 
-  return clone
+  return output as B
 }

@@ -1,18 +1,17 @@
 import { NumericalBuffer } from '../../types'
 import { fade } from './fade'
-import { createBuffer } from './createBuffer'
+import { sum } from './sum'
 
 export const crossFade = <B extends NumericalBuffer>(
-  bStart: number,
   bufferA: B,
-  bufferB: B
-) => {
-  const overlap = bufferA.length - bStart
-  const result = createBuffer(bufferA.length + bufferB.length - overlap)
+  bufferB: B,
+  bOffset: number,
+  interpolation?: (t: number) => number
+): B => {
+  const overlap = bufferA.length - bOffset
+  // TODO: refactor, probably should have fadeIn and fadeOut, as mutable?
+  const aFadedOut = fade(bufferA, 0, overlap, undefined, interpolation)
+  const bFadeIn = fade(bufferB, overlap, 0, interpolation)
 
-  // TODO: pass different interpolation fn
-  result.set(fade(bufferA, 0, overlap))
-  result.set(fade(bufferB, overlap, 0), bStart)
-
-  return result
+  return sum(aFadedOut, bFadeIn, bOffset)
 }

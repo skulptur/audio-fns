@@ -1,5 +1,6 @@
 import { getPeak } from './getPeak'
-import { NumericalBuffer, WritableNumericalBuffer } from '../../types'
+import { NumericalBuffer, MutableNumericalBuffer } from '../../types'
+import { clone } from './clone'
 
 // TODO: inline
 const mapRange = (
@@ -14,15 +15,15 @@ export const normalize = <B extends NumericalBuffer>(
   buffer: B,
   limit: number = 1
 ): B => {
-  const clone = buffer.slice(0) as WritableNumericalBuffer
-  const length = clone.length
+  const targetBuffer = clone(buffer) as MutableNumericalBuffer
+  const length = targetBuffer.length
   const peak = getPeak(buffer)
 
   for (let i = 0; i < length; i++) {
     const sample = buffer[i]
 
-    clone[i] = mapRange(-peak, peak, -limit, limit, sample)
+    targetBuffer[i] = mapRange(-peak, peak, -limit, limit, sample)
   }
 
-  return clone as B
+  return targetBuffer as B
 }

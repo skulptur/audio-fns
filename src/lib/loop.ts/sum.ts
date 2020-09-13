@@ -1,4 +1,4 @@
-import { WritableNumericalBuffer, NumericalBuffer } from '../../types'
+import { MutableNumericalBuffer, NumericalBuffer } from '../../types'
 
 export const sum = <B extends NumericalBuffer>(buffers: Array<B>): B => {
   if (buffers.length < 2) {
@@ -12,7 +12,7 @@ export const sum = <B extends NumericalBuffer>(buffers: Array<B>): B => {
   const longestIndex = buffers.indexOf(longestBuffer)
   const remainingBuffers = buffers.splice(longestIndex, 1)
   const remainingBuffersLength = remainingBuffers.length
-  const output = longestBuffer.slice(0) as WritableNumericalBuffer
+  const output = longestBuffer.slice(0) as MutableNumericalBuffer
 
   for (
     let bufferIndex = 0;

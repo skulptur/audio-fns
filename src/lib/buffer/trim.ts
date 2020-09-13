@@ -1,10 +1,10 @@
-import { NumericalBuffer } from '../../types'
+import { NumericalBuffer, Sliceable } from '../../types'
 
-export const trim = <B extends NumericalBuffer>(
+export const trim = <B extends NumericalBuffer & Sliceable>(
   buffer: B,
   startThreshold: number | null = null,
   endThreshold: number | null = null
-) => {
+): B => {
   let trimStart = 0
   let trimEnd = buffer.length - 1
 
@@ -23,5 +23,5 @@ export const trim = <B extends NumericalBuffer>(
     }
   }
 
-  return buffer.slice(trimStart, trimEnd + 1)
+  return buffer.slice(trimStart, trimEnd + 1) as B
 }

@@ -1,35 +1,18 @@
-import { WritableNumericalBuffer, NumericalBuffer } from '../../types'
+import { MutableNumericalBuffer, NumericalBuffer } from '../../types'
+import { clone } from './clone'
 
-export const sum = <B extends NumericalBuffer>(buffers: Array<B>): B => {
-  if (buffers.length < 2) {
-    throw new Error(`Sum requires at least two buffers.`)
-  }
+export const sum = <B extends NumericalBuffer>(
+  bufferA: B,
+  bufferB: B,
+  bOffset: number = 0 // accepts negative
+): B => {
+  const bLength = bufferB.length
+  const totalLength = Math.max(bufferA.length, bLength + bOffset)
+  const output = clone(bufferA, totalLength) as MutableNumericalBuffer
 
-  const longestBuffer = buffers.reduce((a, b) => {
-    return a.length > b.length ? a : b
-  })
-
-  const longestIndex = buffers.indexOf(longestBuffer)
-  const remainingBuffers = buffers.splice(longestIndex, 1)
-  const remainingBuffersLength = remainingBuffers.length
-  const output = longestBuffer.slice(0) as WritableNumericalBuffer
-
-  for (
-    let bufferIndex = 0;
-    bufferIndex < remainingBuffersLength;
-    bufferIndex++
-  ) {
-    const currentBuffer = buffers[bufferIndex]
-    const currentBufferLength = currentBuffer.length
-
-    for (
-      let sampleIndex = 0;
-      sampleIndex < currentBufferLength;
-      sampleIndex++
-    ) {
-      const sample = currentBuffer[sampleIndex]
-      output[sampleIndex] = output[bufferIndex] + sample
-    }
+  // TODO: would be more efficient to only add the interseccion, and mutably set the rest
+  for (let i = bOffset; i < totalLength; i++) {
+    output[i] += bufferB[i]
   }
 
   return output as B
