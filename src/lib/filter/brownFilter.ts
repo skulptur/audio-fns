@@ -1,11 +1,12 @@
 import { NumericalBuffer, MutableNumericalBuffer } from '../../types'
+import { clone } from '../buffer/clone'
 
 export const brownFilter = <B extends NumericalBuffer>(
   buffer: B,
   state = 0
 ) => {
   const length = buffer.length
-  const _buffer = buffer.slice(0) as MutableNumericalBuffer
+  const _buffer = clone(buffer) as MutableNumericalBuffer
 
   for (let i = 0; i < length; i++) {
     const sample = buffer[i]
