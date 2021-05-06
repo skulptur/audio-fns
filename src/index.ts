@@ -35,7 +35,7 @@ export { atanSoftClip } from './lib/processing/atanSoftClip'
 export { bitReduction } from './lib/processing/bitReduction'
 export { cubicSoftClip } from './lib/processing/cubicSoftClip'
 export { hardClip } from './lib/processing/hardClip'
-export { infiniteClip } from './lib/processing/infiniteClip'
+export { infinityClip } from './lib/processing/infinityClip'
 export { invert } from './lib/processing/invert'
 
 // sampling

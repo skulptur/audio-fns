@@ -1,4 +1,4 @@
-import { infiniteClip } from './infiniteClip'
+import { infinityClip } from './infinityClip'
 
 describe('infiniteClip', () => {
   it('performs infinite clip distortion', () => {
@@ -20,7 +20,7 @@ describe('infiniteClip', () => {
       1.5,
       1.75,
     ]
-    const result = drySignal.map(infiniteClip)
+    const result = drySignal.map(infinityClip)
 
     expect(result).toEqual([
       -1,
