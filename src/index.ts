@@ -1,3 +1,9 @@
+// audioContext
+export { decodeAudio } from './lib/audioContext/decodeAudio'
+export { fetchBuffer } from './lib/audioContext/fetchBuffer'
+export { resumeContext } from './lib/audioContext/resumeContext'
+export { isContextSuspended } from './lib/audioContext/isContextSuspended'
+
 // buffer
 export { clone } from './lib/buffer/clone'
 export { concat } from './lib/buffer/concat'
