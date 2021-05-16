@@ -1,8 +1,13 @@
+type DecodedAudio = {
+  buffer: AudioBuffer
+  createNode: () => AudioNode
+}
+
 export const decodeAudio = (
   requestResponse: ArrayBuffer,
   context: AudioContext
 ) => {
-  return new Promise(resolve => {
+  return new Promise<DecodedAudio>(resolve => {
     context.decodeAudioData(requestResponse, buffer => {
       resolve({
         buffer,
