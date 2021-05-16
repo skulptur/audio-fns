@@ -1,6 +1,6 @@
 type DecodedAudio = {
   buffer: AudioBuffer
-  createNode: () => AudioNode
+  createNode: () => AudioBufferSourceNode
 }
 
 export const decodeAudio = (
