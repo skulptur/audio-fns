@@ -23,6 +23,7 @@ export { writeEvery } from './lib/buffer/writeEvery'
 
 // conversion
 export { amplitudeToDecibels } from './lib/conversion/amplitudeToDecibels'
+export { beatsToSeconds } from './lib/conversion/beatsToSeconds'
 export { bpmToSamples } from './lib/conversion/bpmToSamples'
 export { decibelsToAmplitude } from './lib/conversion/decibelsToAmplitude'
 export { hertzToMel } from './lib/conversion/hertzToMel'
@@ -30,6 +31,7 @@ export { hertzToMidi } from './lib/conversion/hertzToMidi'
 export { melToHertz } from './lib/conversion/melToHertz'
 export { midiToHertz } from './lib/conversion/midiToHertz'
 export { samplesToSeconds } from './lib/conversion/samplesToSeconds'
+export { secondsToBeats } from './lib/conversion/secondsToBeats'
 export { secondsToSamples } from './lib/conversion/secondsToSamples'
 
 // filter
