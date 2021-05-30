@@ -1,17 +1,17 @@
 import { isContextSuspended } from './isContextSuspended'
 
 export const resumeContext = (audioContext: AudioContext) => {
-  return new Promise<void>((resolve, reject) => {
+  return new Promise<AudioContext>((resolve, reject) => {
     isContextSuspended(audioContext)
       ? audioContext
           .resume()
-          .then(resolve)
+          .then(() => resolve(audioContext))
           .catch(error => {
             if (isContextSuspended(audioContext)) {
               reject(new Error("Couldn't resume audioContext."))
             }
             reject(error)
           })
-      : resolve()
+      : resolve(audioContext)
   })
 }
