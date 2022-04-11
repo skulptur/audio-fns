@@ -1,4 +1,4 @@
-type DecodedAudio = {
+export type DecodedAudio = {
   buffer: AudioBuffer
   createNode: () => AudioBufferSourceNode
 }
